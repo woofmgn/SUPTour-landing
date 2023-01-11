@@ -16,3 +16,6 @@ reports/
 # Папка с собранными файлами проекта
 build/
 dist/
+
+.prettierrc.json
+.editorconfig
