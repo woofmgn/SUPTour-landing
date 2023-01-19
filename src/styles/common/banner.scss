@@ -31,7 +31,10 @@
 
     @media screen and (max-width: 1023px) {
       max-width: 590px;
-      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 330px;
     }
   }
 
@@ -53,6 +56,7 @@
     padding: 19px 35px 15px 35px;
     background-color: $yellow;
     opacity: .87;
+    border: none;
     border-radius: 10px;
     font-family: $defaultFonts;
     font-weight: 400;
@@ -84,5 +88,7 @@
     &_type_whatsapp {
       background-image: url(../../images/banner/whatsapp-icon.svg);
     }
+
+
   }
 }

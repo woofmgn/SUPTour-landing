@@ -1,0 +1,12 @@
+.link {
+  transition: all .3s ease-in-out;
+  opacity: 1;
+
+  &_type_one:hover, &_type_one:active {
+    opacity: 0.6;
+  }
+
+  &_type_two:hover, &_type_two:active {
+    scale: 1.1;
+  }
+}

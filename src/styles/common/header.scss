@@ -13,9 +13,8 @@
 
   &__logo {
     display: flex;
-    max-width: 106px;
-    width: 100%;
-    max-height: 37px;
+    width: 106px;
+    height: 37px;
     background-image: url(../../images/logo/logo.svg);
     background-size: cover;
 
@@ -23,6 +22,23 @@
       max-width: 96px;
       width: 100%;
       max-height: 34px;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 106px;
+      height: 37px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 37px;
+    height: 37px;
+    background-image: url(../../images/header/burger.svg);
+    background-size: cover;
+
+    @media screen and (max-width: 850px) {
+      display: flex;
     }
   }
 

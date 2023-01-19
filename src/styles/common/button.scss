@@ -1,0 +1,11 @@
+@import '../utils/color.scss';
+
+.button {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover, &:active {
+    background-color: $white;
+    color: $black;
+  }
+}
