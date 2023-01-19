@@ -15,19 +15,28 @@
     padding-bottom: 247px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      margin-top: 200px;
+      padding-bottom: 164px;
+    }
   }
 
   &__content {
     max-width: 883px;
+
+    @media screen and (max-width: 1140px) {
+      max-width: 783px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      max-width: 590px;
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
-    font-family: $defaultFonts;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    color: $white;
   }
 
   &__subtitle {

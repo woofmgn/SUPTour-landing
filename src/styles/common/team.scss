@@ -7,6 +7,13 @@
   &__container {
     padding-top: 55px;
     padding-bottom: 86px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__image-wrapper {
@@ -24,7 +31,103 @@
       border-bottom: 1px solid rgba(255, 191, 26, .4);
       border-right: 1px solid rgba(255, 191, 26, .4);
     }
+
+    @media screen and (max-width: 1023px) {
+      order: 2;
+      margin-top: 30px;
+    }
   }
 
+  &__image {
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 23px rgba(255, 255, 255, 0.47));
+    border-radius: 10px;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 43px;
+
+    @media screen and (max-width: 1023px) {
+      // padding-left: 0px
+    }
+  }
+
+  &__title-wrapper {
+    margin-left: 30px;
+    max-width: 560px;
+    height: 158px;
+    width: 100%;
+    max-height: 158px;
+    display: flex;
+    position: relative;
+    border: 2px solid $yellow;
+    border-radius: 10px;
+  }
+
+  &__title {
+    position: relative;
+    top: 42px;
+    right: 30px;
+    letter-spacing: -0.08em;
+    color: #D1D1D1;;
+  }
+
+  &__service-list {
+    margin-top: 68px;
+    max-width: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px
+  }
+
+  &__service-item {
+    max-width: 269px;
+
+    display: flex;
+
+    position: relative;
+
+    &_type_before-container {
+      padding-bottom: 50px;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 103px;
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid rgba(255, 191, 26, 0.4);
+      }
+    }
+  }
+
+  &__service-number {
+    padding-right: 8px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 62px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFBF1A;
+
+    &_type_first {
+      padding-right: 24px;
+    }
+  }
+
+  &__service-description {
+    align-self: flex-end;
+    color: $whiteGray;
+    text-align: bottom;
+  }
 }
 
