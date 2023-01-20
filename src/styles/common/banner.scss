@@ -11,7 +11,7 @@
 
   &__container {
     width: 100%;
-    margin-top: 263px;
+    margin-top: 258px;
     padding-bottom: 247px;
     display: flex;
     justify-content: space-between;
@@ -38,12 +38,9 @@
     }
   }
 
-  &__title {
-    margin-bottom: 40px;
-  }
-
   &__subtitle {
-    margin-bottom: 50px;
+    margin-top: 31px;
+
     font-family: $defaultFonts;
     font-weight: 400;
     font-size: 24px;
@@ -53,6 +50,7 @@
   }
 
   &__button {
+    margin-top: 50px;
     padding: 19px 35px 15px 35px;
     background-color: $yellow;
     opacity: .87;

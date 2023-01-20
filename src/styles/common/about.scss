@@ -52,7 +52,6 @@
     max-width: 129px;
     width: 100%;
     padding-bottom: 34px;
-    margin-bottom: 33px;
     color: $whiteGray;
     border-bottom: 2px solid $yellow;
   }
@@ -60,12 +59,12 @@
   &__description {
     max-width: 560px;
     width: 100%;
-    margin-top: 47px;
+    margin-top: 30px;
     color: $whiteGray;
   }
 
   &__card-list {
-    margin-top: 47px;
+    margin-top: 56px;
     max-width: 560px;
     width: 100%;
     display: flex;
@@ -100,8 +99,6 @@
     text-align: center;
     color: $whiteGray;
   }
-
-
 
   &__card-subtitle {
     font-family: $defaultFonts;

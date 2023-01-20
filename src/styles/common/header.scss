@@ -52,6 +52,7 @@
   }
 
   &__item-list {
+    margin-left: 60px;
     display: flex;
     gap: 24px;
   }
@@ -94,6 +95,6 @@
     font-size: 18px;
     line-height: 21px;
     color: $white;
-    text-align: center;
+    text-align: right;
   }
 }
