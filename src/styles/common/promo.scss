@@ -1,25 +1,26 @@
 @import '../utils/color.scss';
 @import '../utils/variables.scss';
 
-.banner {
+.promo {
+  height: 100vh;
+  max-height: 835px;
+  min-height: 700px;
   display: flex;
+  align-items: center;
   background-image: url(../../images/header/banner.png);
   background-position: top;
   background-color: transparent;
   background-size: cover;
-  margin-top: -108px;
+
+  @media screen and (max-width: 1023px) {
+    max-height: 735px;
+    min-height: 600px;
+  }
 
   &__container {
     width: 100%;
-    margin-top: 258px;
-    padding-bottom: 247px;
     display: flex;
     justify-content: space-between;
-
-    @media screen and (max-width: 1023px) {
-      margin-top: 200px;
-      padding-bottom: 164px;
-    }
   }
 
   &__content {

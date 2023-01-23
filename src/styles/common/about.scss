@@ -35,25 +35,34 @@
     }
 
     @media screen and (max-width: 767px) {
+      margin-top: 48px;
       padding-bottom: 60px;
     }
   }
 
   &__content {
+    max-width: 560px;
+    width: 48%;
     z-index: 3;
     padding-right: 40px;
 
     @media screen and (max-width: 1023px) {
+      max-width: 100%;
       padding-right: 0px;
+      width: 100%;
     }
   }
 
   &__title {
     max-width: 129px;
     width: 100%;
-    padding-bottom: 34px;
+    padding-bottom: 24px;
     color: $whiteGray;
     border-bottom: 2px solid $yellow;
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 20px;
+    }
   }
 
   &__description {
@@ -61,15 +70,22 @@
     width: 100%;
     margin-top: 30px;
     color: $whiteGray;
+
+    @media screen and (max-width: 1023px) {
+      max-width: 760px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin-top: 24px;
+    }
   }
 
   &__card-list {
     margin-top: 56px;
-    max-width: 560px;
+    max-width: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
 
     @media screen and (max-width: 1023px) {
       margin-top: 27px;
@@ -85,10 +101,16 @@
     flex-direction: column;
     justify-content: center;
     gap: 18px;
-    width: 160px;
+    width: calc(33% - 20px);
     height: 117px;
     border: 1px solid $yellow;
     border-radius: 10px;
+
+    @media screen and (max-width: 767px) {
+      gap: 14px;
+      width: calc(33% - 12px);
+      height: 80px;
+    }
   }
 
   &__card-title {
@@ -109,17 +131,31 @@
     color: $whiteGray;
   }
 
-  &__image {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-    max-width: 638px;
+  &__image-wrapper {
+
+    max-width: 560px;
+    width: 50%;
     box-shadow: 0px 8px 31px 8px rgba(202, 202, 202, 0.25);
     border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
 
     @media screen and (max-width: 1023px) {
       margin-top: 40px;
-      max-width: 560px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    max-width: 638px;
+    object-fit: cover;
+    z-index: 1;
+
+    @media screen and (max-width: 1023px) {
+      max-width: 100%;
     }
   }
 }

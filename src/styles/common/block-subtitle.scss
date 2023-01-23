@@ -23,4 +23,15 @@
       letter-spacing: 0;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+    line-height: 24px;
+
+    &_type_content {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0;
+    }
+  }
 }
