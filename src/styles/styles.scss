@@ -2,6 +2,10 @@
 @import url('./utils/color.scss');
 @import url('./utils/fonts.scss');
 
+@import url('../../node_modules/swiper/swiper-vars.scss');
+@import url('../../node_modules/swiper/swiper.scss');
+@import url('../../node_modules/swiper/modules/navigation/navigation.scss');
+@import url('./common/slider.scss');
 @import url('./common/general.scss');
 @import url('./common/page.scss');
 @import url('./common/link.scss');
@@ -14,3 +18,4 @@
 @import url('./common/about.scss');
 @import url('./common/team.scss');
 @import url('./common/choise.scss');
+@import url('./common/gallery.scss');

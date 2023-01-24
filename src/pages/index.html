@@ -121,12 +121,16 @@
       </section>
       <section class="choise">
         <div class="block-wrapper choise__container">
-          <h2 class="block-title choise__title">Выбор тура</h2>
+          <div class="choise__title-wrapper">
+            <h2 class="block-title block-title_type_section choise__title">Выбор тура</h2>
+          </div>
           <ul class="choise__card-container">
             <li class="choise__card-item">
               <div class="choise__book-wrapper">
                 <h3 class="choise__card-title">Индивидуальный тур</h3>
-                <span class="choise__card-subtitle">(от 1 до 5 чел)</span>
+                <div class="choise__subtitle-wrapper">
+                  <span class="choise__card-subtitle">(от 1 до 5 чел)</span>
+                </div>
                 <p class="block-subtitle block-subtitle_type_content choise__card-description">Тур планируется в удобную для вас дату. Мы учтем все ваши пожелания и организуем максимально комфортную прогулку</p>
               </div>
               <div class="choise__book-wrapper">
@@ -137,7 +141,9 @@
             <li class="choise__card-item">
               <div class="choise__book-wrapper">
                 <h3 class="choise__card-title">Авторский тур</h3>
-                <span class="choise__card-subtitle">(от 10 до 15 чел)</span>
+                <div class="choise__subtitle-wrapper">
+                  <span class="choise__card-subtitle">(от 10 до 15 чел)</span>
+                </div>
                 <p class="block-subtitle block-subtitle_type_content choise__card-description">Мы запланировали маршрут! Выбирайте подходящий город и дату. Отправляйтесь в путешествие в нашей дружной компании!</p>
               </div>
               <div class="choise__book-wrapper">
@@ -148,7 +154,9 @@
             <li class="choise__card-item">
               <div class="choise__book-wrapper">
                 <h3 class="choise__card-title">Корпоративный тур</h3>
-                <span class="choise__card-subtitle">для вас и ваших сотрудников</span>
+                <div class="choise__subtitle-wrapper">
+                  <span class="choise__card-subtitle">для вас и ваших сотрудников</span>
+                </div>
                 <p class="block-subtitle block-subtitle_type_content choise__card-description">Организуем эффективный и продуманный тимбилдинг. Спорт и релакс в одной прогулке.</p>
               </div>
               <div class="choise__book-wrapper">
@@ -157,6 +165,24 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="block-wrapper gallery__container">
+          <div class="gallery__content-container">
+            <h2 class="block-title block-title_type_section gallery__title">Просмотрите галерею</h2>
+            <p class="block-subtitle block-subtitle_type_content gallery__subtitle">С нами вы так же сможете наслаждаться пейзажами и получать удовольствие от прогулки</p>
+            <button class="button gallery__button">Забронировать</button>
+          </div>
+          <div class="swiper mySwiper slider">
+            <div class="swiper-wrapper slider__wrapper">
+              <div class="swiper-slide slider__slide"><img src="<%=require('../images/gallery/image-1.png')%>" alt="Слайдер, фото 1" class="slider__image"></div>
+              <div class="swiper-slide slider__slide"><img src="<%=require('../images/gallery/image-1.png')%>" alt="Слайдер, фото 2" class="slider__image"></div>
+              <div class="swiper-slide slider__slide"><img src="<%=require('../images/gallery/image-1.png')%>" alt="Слайдер, фото 3" class="slider__image"></div>
+            </div>
+            <div class="swiper-button-next slider__button-next"></div>
+            <div class="swiper-button-prev slider__button-prev"></div>
+          </div>
         </div>
       </section>
     </main>

@@ -23,26 +23,57 @@
 
 
   &__container {
-    margin-top: 75px;
+    margin-top: 68px;
     padding-bottom: 97px;
     flex-direction: column;
     z-index: 3;
+
+    @media screen and (max-width: 1023px) {
+      margin-top: 58px;
+    }
+
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 0;
+
+    &::before, &::after {
+      content: "";
+      background: $yellow;
+      width: 59px;
+      height: 2px;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0px 8px;
+    }
   }
 
   &__title {
     text-align: center;
+    letter-spacing: -0.08em;
+    text-shadow: 0px 2px 13px #000000;
   }
 
   &__card-container {
     width: 100%;
-    margin-top: 90px;
+    margin-top: 82px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px 40px;
 
     @media screen and (max-width: 1023px) {
+      margin-top: 70px;
       gap: 30px 30px;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 50px;
     }
   }
 
@@ -70,10 +101,31 @@
     line-height: 35px;
     text-align: center;
     color: $whiteGray;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  &__subtitle-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: '';
+      height: 2px;
+      max-width: 143px;
+      width: 100%;
+      background-color: $yellow;
+      font-size: 0px;
+      line-height: 0px;
+      margin: 0px auto;
+    }
   }
 
   &__card-subtitle {
-    margin-top: 28px;
+    margin-top: 23px;
     padding-bottom: 38px;
     display: block;
     font-family: $defaultFonts;
@@ -123,6 +175,8 @@
     font-size: 15px;
     line-height: 17px;
     color: $black;
+    border: none;
     border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px #1A1A1A);
   }
 }
