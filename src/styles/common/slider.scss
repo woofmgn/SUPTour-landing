@@ -1,10 +1,19 @@
 .slider {
   max-width: 660px;
   width: 100%;
+  max-height: 430px;
   height: 100%;
   z-index: 100;
   border-radius: 10px;
   margin: 0;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 
   &__wrapper {
 
@@ -15,6 +24,7 @@
   }
 
   &__button-next {
+    top: 55%;
     right: 28px;
     width: 32px;
     height: 30px;
@@ -27,6 +37,7 @@
   }
 
   &__button-prev {
+    top: 55%;
     left: 28px;
     width: 32px;
     height: 30px;
