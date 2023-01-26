@@ -8,12 +8,21 @@
   max-width: 400px;
   width: 100%;
 
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
+
   &__input {
     margin-bottom: 44px;
-
     padding-bottom: 12px;
     border: none;
     background-color: transparent;
+    font-family: $defaultFonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: $white;
     border-bottom: 1px solid #FFFFFF;
 
     &::placeholder {
@@ -27,6 +36,14 @@
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 
@@ -43,6 +60,16 @@
     background-color: transparent;
     border: 1px solid #FFBF1A;
     border-radius: 10px;
+    transition: all .3s ease-in-out;
+
+    &:active, &:hover {
+      background-color: $yellow;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 39px;
+    }
   }
 
   &__confodential {
@@ -60,6 +87,6 @@
   &__link {
     text-decoration: underline;
     color: #F5F5F5;
-    // cursor: pointer;
+
   }
 }

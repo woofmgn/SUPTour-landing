@@ -1,0 +1,25 @@
+@import '../utils/color.scss';
+@import '../utils/variables.scss';
+
+.navigation {
+  display: flex;
+  margin-top: 10px;
+
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+
+  &__item-list {
+    margin-left: 60px;
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    color: $white;
+    font-family: $defaultFonts;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
