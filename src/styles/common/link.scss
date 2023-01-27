@@ -1,6 +1,7 @@
 .link {
   transition: all .3s ease-in-out;
   opacity: 1;
+  cursor: pointer;
 
   &_type_one:hover, &_type_one:active {
     opacity: 0.6;
