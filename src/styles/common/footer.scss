@@ -17,6 +17,12 @@
     }
   }
 
+  &__navigation {
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+
   &__item-list {
     gap: 56px;
   }

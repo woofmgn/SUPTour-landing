@@ -6,13 +6,55 @@
   margin-top: 10px;
 
   @media screen and (max-width: 850px) {
-    display: none;
+    &__burger-menu {
+      z-index: 100;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: relative;
+      display: block;
+      transition: all .3s ease-in-out;;
+
+      &_active {
+        width: 100%;
+        height: 100vh;
+        pointer-events: all;
+      }
+    }
   }
 
   &__item-list {
     margin-left: 60px;
     display: flex;
     gap: 24px;
+
+    @media screen and (max-width: 850px) {
+      &_type_burger-wrapper {
+        z-index: 900;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        transform: translateY(-130%);
+        transition: all .3s ease-in-out;
+        margin: 0 auto;
+        padding: 100px 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(249, 250, 252, 1);
+
+        &_active {
+            transition: all .3s ease-in-out;
+            transform: translateY(0);
+        }
+      }
+    }
   }
 
   &__link {
@@ -21,5 +63,16 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+
+    @media screen and (max-width: 850px) {
+      &_type_burger {
+        font-size: 23px;
+        line-height: 25px;
+        color: $black !important;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
   }
 }
